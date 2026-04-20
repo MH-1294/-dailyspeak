@@ -1,11 +1,49 @@
 "use client";
 import React, { useMemo, useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
-import { Button } from "../components/ui/button";
-import { Input } from "../components/ui/input";
-import { Textarea } from "../components/ui/textarea";
-import { Badge } from "../components/ui/badge";
 import { ArrowLeft, Check, Globe, Home, Search, Shield, Volume2, X } from "lucide-react";
+
+function Card({ className = "", children }) {
+  return <div className={className}>{children}</div>;
+}
+
+function CardHeader({ className = "", children }) {
+  return <div className={className}>{children}</div>;
+}
+
+function CardTitle({ className = "", children }) {
+  return <div className={className}>{children}</div>;
+}
+
+function CardContent({ className = "", children }) {
+  return <div className={className}>{children}</div>;
+}
+
+function Button({ className = "", variant = "default", children, ...props }) {
+  const base = "inline-flex items-center justify-center px-4 py-2 text-sm font-medium transition";
+  const styles =
+    variant === "outline"
+      ? "border bg-white hover:bg-slate-50"
+      : variant === "ghost"
+      ? "hover:bg-slate-100"
+      : "bg-slate-900 text-white hover:bg-slate-800";
+  return (
+    <button className={`${base} ${styles} ${className}`} {...props}>
+      {children}
+    </button>
+  );
+}
+
+function Input({ className = "", ...props }) {
+  return <input className={`w-full border px-3 py-2 ${className}`} {...props} />;
+}
+
+function Textarea({ className = "", ...props }) {
+  return <textarea className={`w-full border px-3 py-2 ${className}`} {...props} />;
+}
+
+function Badge({ className = "", children }) {
+  return <span className={`inline-flex items-center border px-2 py-1 text-xs ${className}`}>{children}</span>;
+}
 
 const categories = [
   { id: "transport", label: "Transport", emoji: "🚌" },
