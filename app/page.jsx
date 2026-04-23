@@ -51,6 +51,7 @@ const categories = [
   { id: "health", label: "Health", emoji: "🏥" },
   { id: "school", label: "School", emoji: "🎓" },
   { id: "work", label: "Work", emoji: "💼" },
+  { id: "home", label: "Home", emoji: "🏠" },
 ];
 
 const approvedSeed = [
@@ -108,6 +109,116 @@ const approvedSeed = [
     englishText: "Can you help me with this task?",
     tips: ["Be direct", "Use gestures if needed"],
   },
+  {
+  id: 7,
+  title: "At the doctor",
+  category: "health",
+  situation: "You are visiting a doctor because you are feeling sick.",
+  nativeText: "আমি অসুস্থ বোধ করছি।",
+  englishText: "I am feeling sick.",
+  tips: [
+    "Speak clearly about your problem",
+    "You can point to where it hurts"
+  ]
+},
+{
+  id: 8,
+  title: "Asking for a job",
+  category: "work",
+  situation: "You want to ask if there is any job available.",
+  nativeText: "এখানে কি কোনো কাজ আছে?",
+  englishText: "Is there any job available?",
+  tips: [
+    "Be polite",
+    "Smile and speak confidently"
+  ]
+},
+{
+  id: 9,
+  title: "Talking to teacher",
+  category: "school",
+  situation: "You want to tell the teacher that you did not understand the lesson.",
+  nativeText: "আমি পাঠটা বুঝতে পারিনি।",
+  englishText: "I did not understand the lesson.",
+  tips: [
+    "Ask politely",
+    "You can say it slowly"
+  ]
+},
+{
+  id: 10,
+  title: "At the grocery store",
+  category: "shopping",
+  situation: "You cannot find an item in the store and need help.",
+  nativeText: "আমি এই জিনিসটা খুঁজে পাচ্ছি না।",
+  englishText: "I cannot find this item.",
+  tips: [
+    "Show the item if possible",
+    "Ask a staff member for help"
+  ]
+},
+{
+  id: 11,
+  title: "Talking to landlord",
+  category: "home",
+  situation: "You want to tell your landlord that something is broken.",
+  nativeText: "বাড়ির কিছু নষ্ট হয়ে গেছে।",
+  englishText: "Something is broken in the house.",
+  tips: [
+    "Use simple words",
+    "Show or point to the problem if possible"
+  ]
+},
+{
+  id: 12,
+  title: "At the doctor",
+  category: "health",
+  situation: "You are at the doctor and want to explain your problem.",
+  nativeText: "আমার জ্বর হয়েছে এবং শরীর ব্যথা করছে।",
+  englishText: "I have a fever and body pain.",
+  tips: [
+    "Speak slowly and clearly",
+    "Point to where it hurts if needed"
+  ]
+},
+{
+  id: 13,
+  title: "Talking to employer",
+  category: "work",
+  situation: "You are running late and need to inform your employer.",
+  nativeText: "আমি আজ একটু দেরি করব।",
+  englishText: "I will be a little late today.",
+  tips: [
+    "Be polite",
+    "Say it early if possible"
+  ]
+},
+{
+  id: 14,
+  title: "Asking for directions",
+  category: "transport",
+  situation: "You are lost and need help finding a place.",
+  nativeText: "আমি এই জায়গাটা খুঁজে পাচ্ছি না।",
+  englishText: "I cannot find this place.",
+  tips: [
+    "Show the address if possible",
+    "Ask a nearby person"
+  ]
+},
+{
+  id: 15,
+  title: "Talking to landlord",
+  category: "home",
+  situation: "You want to tell your landlord that something is not working.",
+  nativeText: "হিটার কাজ করছে না।",
+  englishText: "The heater is not working.",
+  tips: [
+    "Be clear and direct",
+    "Show the problem if possible"
+  ]
+},
+
+
 ];
 
 const pendingSeed = [
